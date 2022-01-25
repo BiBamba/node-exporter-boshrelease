@@ -25,11 +25,11 @@ addons:
     jobs:
       - name: node_exporter
         release: node-exporter
+        properties: {}
     include:
       stemcell:
         - os: ubuntu-trusty
-        - os: ubuntu-xenial
-    properties: {}
+        - os: ubuntu-xenial  
 ```
 
 Now you can update your [BOSH Runtime Config](http://bosh.io/docs/runtime-config.html) with the previously created file:
